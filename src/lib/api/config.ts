@@ -4,7 +4,7 @@ import type { ApiResponse } from "@otter-music/shared";
 export const IS_NATIVE = Capacitor.isNativePlatform();
 export const IS_WEB_PROD = import.meta.env.PROD && !IS_NATIVE;
 
-export const API_URL = IS_WEB_PROD ? window.location.origin : "https://otter-music.pages.dev";
+export const API_URL = IS_WEB_PROD ? window.location.origin : "https://otter-music-d07.pages.dev";
 export const API_TIMEOUT_MS = 10000;
 export const MUSIC_API_FAILURE_COOLDOWN_MS = 5 * 60 * 1000;
 
